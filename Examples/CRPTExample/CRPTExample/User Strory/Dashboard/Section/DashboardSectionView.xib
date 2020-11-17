@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardSectionView" customModule="CRPTFramework2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRYPTO SERVICES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW3-eF-tb5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="14"/>
+                    <color key="textColor" name="darkterium50"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9li-4y-8RF">
+                    <rect key="frame" x="0.0" y="33" width="414" height="203"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eW3-eF-tb5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bfo-UF-hKU"/>
+                <constraint firstItem="eW3-eF-tb5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F9o-57-lo0"/>
+                <constraint firstItem="9li-4y-8RF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ffn-7N-wd8"/>
+                <constraint firstItem="9li-4y-8RF" firstAttribute="top" secondItem="eW3-eF-tb5" secondAttribute="bottom" constant="16" id="kYf-6S-XLT"/>
+                <constraint firstAttribute="bottom" secondItem="9li-4y-8RF" secondAttribute="bottom" id="mBd-Vt-zNQ"/>
+                <constraint firstAttribute="trailing" secondItem="eW3-eF-tb5" secondAttribute="trailing" id="u1c-HC-Pex"/>
+                <constraint firstAttribute="trailing" secondItem="9li-4y-8RF" secondAttribute="trailing" id="vRK-Ci-TAw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonStack" destination="9li-4y-8RF" id="gqA-F5-153"/>
+                <outlet property="title" destination="eW3-eF-tb5" id="OIj-b4-BJK"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkterium50">
+            <color red="0.60784313725490191" green="0.60392156862745094" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+framework module CRPTCore {
+  umbrella header "CRPTCore.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTCore.Swift {
+    header "CRPTCore-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module CRPTTransactionLogic {
+  umbrella header "CRPTTransactionLogic.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTTransactionLogic.Swift {
+    header "CRPTTransactionLogic-Swift.h"
+    requires objc
+}

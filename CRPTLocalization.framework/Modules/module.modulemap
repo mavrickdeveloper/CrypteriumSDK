@@ -1,0 +1,11 @@
+framework module CRPTLocalization {
+  umbrella header "CRPTLocalization.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTLocalization.Swift {
+    header "CRPTLocalization-Swift.h"
+    requires objc
+}

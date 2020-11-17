@@ -1,0 +1,11 @@
+framework module CRPTCards {
+  umbrella header "CRPTCards.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTCards.Swift {
+    header "CRPTCards-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module CRPTAssets {
+  umbrella header "CRPTAssets.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTAssets.Swift {
+    header "CRPTAssets-Swift.h"
+    requires objc
+}

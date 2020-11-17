@@ -1,0 +1,11 @@
+framework module CRPTCommon {
+  umbrella header "CRPTCommon.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTCommon.Swift {
+    header "CRPTCommon-Swift.h"
+    requires objc
+}

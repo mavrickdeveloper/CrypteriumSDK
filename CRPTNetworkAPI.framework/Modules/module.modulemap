@@ -1,0 +1,11 @@
+framework module CRPTNetworkAPI {
+  umbrella header "CRPTNetworkAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTNetworkAPI.Swift {
+    header "CRPTNetworkAPI-Swift.h"
+    requires objc
+}

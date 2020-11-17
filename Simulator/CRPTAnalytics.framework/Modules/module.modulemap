@@ -1,0 +1,11 @@
+framework module CRPTAnalytics {
+  umbrella header "CRPTAnalytics.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTAnalytics.Swift {
+    header "CRPTAnalytics-Swift.h"
+    requires objc
+}

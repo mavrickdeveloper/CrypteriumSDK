@@ -1,0 +1,11 @@
+framework module CRPTManagers {
+  umbrella header "CRPTManagers.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTManagers.Swift {
+    header "CRPTManagers-Swift.h"
+    requires objc
+}

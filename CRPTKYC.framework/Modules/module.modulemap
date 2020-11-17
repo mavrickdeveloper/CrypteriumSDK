@@ -1,0 +1,11 @@
+framework module CRPTKYC {
+  umbrella header "CRPTKYC.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTKYC.Swift {
+    header "CRPTKYC-Swift.h"
+    requires objc
+}

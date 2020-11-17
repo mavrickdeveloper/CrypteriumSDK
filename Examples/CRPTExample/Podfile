@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+source 'https://gitlab.com/george.ovchinnikov/crptframework.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CRPTExample' do
+  use_frameworks!
+  
+  pod 'CRPTFramework', '1.2.3'
+
+end

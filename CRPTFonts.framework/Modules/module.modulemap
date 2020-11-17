@@ -1,0 +1,11 @@
+framework module CRPTFonts {
+  umbrella header "CRPTFonts.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTFonts.Swift {
+    header "CRPTFonts-Swift.h"
+    requires objc
+}

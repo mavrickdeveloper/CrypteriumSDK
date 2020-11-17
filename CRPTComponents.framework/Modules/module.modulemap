@@ -1,0 +1,11 @@
+framework module CRPTComponents {
+  umbrella header "CRPTComponents.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTComponents.Swift {
+    header "CRPTComponents-Swift.h"
+    requires objc
+}

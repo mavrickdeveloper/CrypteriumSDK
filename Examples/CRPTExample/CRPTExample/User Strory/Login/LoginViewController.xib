@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="CRPTExample" customModuleProvider="target">
+            <connections>
+                <outlet property="number" destination="v3H-ER-Ajr" id="Qta-7N-fF1"/>
+                <outlet property="password" destination="Lhr-hW-vSm" id="5Ke-0h-yMY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-ER-Ajr">
+                    <rect key="frame" x="20" y="144" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="XQn-kd-xJr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-hW-vSm">
+                    <rect key="frame" x="20" y="214" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CAM-iq-mgA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZi-Yb-xHh">
+                    <rect key="frame" x="20" y="284" width="374" height="50"/>
+                    <color key="backgroundColor" name="yeterium"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bHY-5E-6AC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" name="black"/>
+                    </state>
+                    <connections>
+                        <action selector="login" destination="-1" eventType="touchUpInside" id="r7d-GS-tma"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v3H-ER-Ajr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="La7-pG-eud"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SZi-Yb-xHh" secondAttribute="trailing" constant="20" id="Qib-g7-wBZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v3H-ER-Ajr" secondAttribute="trailing" constant="20" id="RQs-6e-3da"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lhr-hW-vSm" secondAttribute="trailing" constant="20" id="cGE-tm-k8f"/>
+                <constraint firstItem="v3H-ER-Ajr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="d3f-mj-Hd2"/>
+                <constraint firstItem="SZi-Yb-xHh" firstAttribute="top" secondItem="Lhr-hW-vSm" secondAttribute="bottom" constant="20" id="fBB-QX-Ovd"/>
+                <constraint firstItem="Lhr-hW-vSm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="nSi-UF-cqB"/>
+                <constraint firstItem="Lhr-hW-vSm" firstAttribute="top" secondItem="v3H-ER-Ajr" secondAttribute="bottom" constant="20" id="uF6-hK-POy"/>
+                <constraint firstItem="SZi-Yb-xHh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zhw-iR-Bw5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yeterium">
+            <color red="0.9882352941176471" green="0.84705882352941175" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

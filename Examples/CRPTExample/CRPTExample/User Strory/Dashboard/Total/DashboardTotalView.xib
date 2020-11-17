@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="SFProText-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardTotalView" customModule="CRPTExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="156"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-Tk-Jqf">
+                    <rect key="frame" x="20" y="20" width="303" height="116"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-Rr-9RV">
+                            <rect key="frame" x="0.0" y="0.0" width="71" height="14"/>
+                            <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                            <color key="textColor" name="white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1 119 283.34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-Uz-ChP">
+                            <rect key="frame" x="0.0" y="18" width="187" height="33"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="28"/>
+                            <color key="textColor" name="white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-A5-eeG">
+                            <rect key="frame" x="0.0" y="115" width="303" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Po-eA-zWW">
+                            <rect key="frame" x="0.0" y="115" width="303" height="1"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-fG-ZCa" customClass="Button" customModule="CRPTExample" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="151" height="1"/>
+                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                                    <color key="tintColor" name="white"/>
+                                    <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="-4" maxY="0.0"/>
+                                    <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                                    <state key="normal" title="History" image="DashboardHistoryIcon">
+                                        <color key="titleColor" name="white"/>
+                                    </state>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GY-nx-i9p">
+                                    <rect key="frame" x="151" y="0.0" width="1" height="1"/>
+                                    <subviews>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97a-cU-HiS">
+                                            <rect key="frame" x="0.0" y="-9.5" width="1" height="20"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="5AC-4G-CAH"/>
+                                                <constraint firstAttribute="width" constant="1" id="jeW-9C-ssZ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="AE7-hm-GbF"/>
+                                        <constraint firstItem="97a-cU-HiS" firstAttribute="centerX" secondItem="0GY-nx-i9p" secondAttribute="centerX" id="JUm-oL-TqS"/>
+                                        <constraint firstItem="97a-cU-HiS" firstAttribute="centerY" secondItem="0GY-nx-i9p" secondAttribute="centerY" id="vJR-mH-qsa"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU6-wW-26g" customClass="Button" customModule="CRPTExample" customModuleProvider="target">
+                                    <rect key="frame" x="152" y="0.0" width="151" height="1"/>
+                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                                    <color key="tintColor" name="white"/>
+                                    <inset key="contentEdgeInsets" minX="-4" minY="0.0" maxX="-4" maxY="0.0"/>
+                                    <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                                    <state key="normal" title="Profile" image="DashboardProfileIcon">
+                                        <color key="titleColor" name="white"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="05B-TS-qwh"/>
+                                <constraint firstItem="HU6-wW-26g" firstAttribute="width" secondItem="DoB-fG-ZCa" secondAttribute="width" id="5ug-PI-JNX"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9Po-eA-zWW" secondAttribute="trailing" id="375-07-SI8"/>
+                        <constraint firstItem="9Po-eA-zWW" firstAttribute="trailing" secondItem="6Fk-A5-eeG" secondAttribute="trailing" id="48b-aa-F9K"/>
+                        <constraint firstItem="9Po-eA-zWW" firstAttribute="leading" secondItem="xrh-Tk-Jqf" secondAttribute="leading" id="6br-NZ-oSw"/>
+                        <constraint firstAttribute="bottom" secondItem="9Po-eA-zWW" secondAttribute="bottom" id="8pN-SH-Dul"/>
+                        <constraint firstItem="Oiw-Rr-9RV" firstAttribute="leading" secondItem="xrh-Tk-Jqf" secondAttribute="leading" id="Cgi-k0-Vlw"/>
+                        <constraint firstItem="9Po-eA-zWW" firstAttribute="leading" secondItem="6Fk-A5-eeG" secondAttribute="leading" id="EhB-W1-aWS"/>
+                        <constraint firstItem="Oiw-Rr-9RV" firstAttribute="top" secondItem="xrh-Tk-Jqf" secondAttribute="top" id="Ghx-a2-wXn"/>
+                        <constraint firstItem="9Po-eA-zWW" firstAttribute="top" secondItem="6Fk-A5-eeG" secondAttribute="top" id="Mrm-Xx-XNo"/>
+                        <constraint firstItem="V8f-Uz-ChP" firstAttribute="top" secondItem="Oiw-Rr-9RV" secondAttribute="bottom" constant="4" id="XdE-2z-ndo"/>
+                        <constraint firstItem="9Po-eA-zWW" firstAttribute="bottom" secondItem="6Fk-A5-eeG" secondAttribute="bottom" id="be2-GO-5J2"/>
+                        <constraint firstItem="V8f-Uz-ChP" firstAttribute="leading" secondItem="xrh-Tk-Jqf" secondAttribute="leading" id="o0g-4w-wIP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xrh-Tk-Jqf" secondAttribute="bottom" constant="20" id="0nM-im-NVv"/>
+                <constraint firstAttribute="trailing" secondItem="xrh-Tk-Jqf" secondAttribute="trailing" constant="20" id="C5U-Sn-gDS"/>
+                <constraint firstItem="xrh-Tk-Jqf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="VVv-cV-Ads"/>
+                <constraint firstItem="xrh-Tk-Jqf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wL7-32-TKO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="amount" destination="V8f-Uz-ChP" id="Gjk-te-LDB"/>
+                <outlet property="historyButton" destination="DoB-fG-ZCa" id="ndC-jJ-Oy7"/>
+                <outlet property="profileButton" destination="HU6-wW-26g" id="cQV-6Q-0al"/>
+                <outlet property="title" destination="Oiw-Rr-9RV" id="1Zj-oW-oWL"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DashboardHistoryIcon" width="16" height="16"/>
+        <image name="DashboardProfileIcon" width="16" height="16"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+framework module CRPTColors {
+  umbrella header "CRPTColors.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTColors.Swift {
+    header "CRPTColors-Swift.h"
+    requires objc
+}

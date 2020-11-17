@@ -1,0 +1,11 @@
+framework module CRPTImages {
+  umbrella header "CRPTImages.h"
+
+  export *
+  module * { export * }
+}
+
+module CRPTImages.Swift {
+    header "CRPTImages-Swift.h"
+    requires objc
+}
